@@ -55,7 +55,7 @@ body{
 
 .main{
 	position: relative;
-	height: calc(100vh - 150px);
+	height: calc(100vh - 100px);
 	width: 100%;
 
 	background: red;
@@ -83,7 +83,7 @@ body{
 	padding-top: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
-	height: calc(100% - 75px);
+	height: calc(100% - 100px);
 	width: calc(100% - 40px);
 	background: white;
 
@@ -104,12 +104,4 @@ body{
 	margin-top: 20px;
 
 	background: purple;
-}
-
-.footer{
-	position: relative;
-	width: 100%;
-	height: 50px;
-
-	background: black;
 }
