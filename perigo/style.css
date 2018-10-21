@@ -206,6 +206,8 @@ input[type=text] {
     font-size: 20px;
     font-family: Avenir Next;
     color: #4D4D4D;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input[type=text]:focus {
