@@ -10,14 +10,37 @@ body{
 	width: 100%;
 }
 
+.header-text{
+    font-family: Avenir Next;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4D4D4D;
+    padding-top: 25px;
+}
+
+.title-text{
+	font-family: Avenir Next;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4D4D4D;
+    bottom: 0px;
+    position: absolute;
+}
+
 .icon{
 	position: relative;
 	float: left;
 	margin-left: 50px;
 	height: 75px;
 	width: 100px;
+}
 
-	background: blue;
+.icon-image{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 12px;
 }
 
 .search-bar{
@@ -28,8 +51,6 @@ body{
     width: 50vw;
     max-width: 650px;
     min-width: 300px;
-
-    background: blue;
 }
 
 .sign-in{
@@ -38,8 +59,6 @@ body{
     margin-right: 50px;
     height: 75px;
     width: 150px;
-
-    background: blue;
 }
 
 .sign-up{
@@ -48,8 +67,6 @@ body{
     margin-right: 50px;
     height: 75px;
     width: 150px;
-
-    background: blue;
 }
 
 .main{
@@ -60,10 +77,10 @@ body{
 
 .main-frame{
 	position: relative;
-	top: 100px;
+	top: 50px;
 	left: 150px;
-	height: calc(100% - 100px);
 	width: calc(100% - 300px);
+	padding-bottom: 50px;
 }
 
 .browser-bar{
@@ -77,8 +94,6 @@ body{
     margin-left: 60px;
     height: 75px;
     width: 200px;
-
-    background: orange
 }
 
 .item-frame{
@@ -88,7 +103,6 @@ body{
 	padding-right: 20px;
 	height: calc(100% - 100px);
 	width: calc(100% - 40px);
-	background: white;
 
 	display: flex;
 	flex-direction: row;
@@ -103,8 +117,6 @@ body{
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
-
-	background: purple;
 }
 
 .item-image{
@@ -112,29 +124,57 @@ body{
 	max-width: 325px;
 	min-height: 200px;
 	min-width: 325px;
+	overflow: hidden;
+}
 
-	background: green;
+.item-image-pic{
+	max-height: 200px;
+	max-width: 325px;
+	min-height: 200px;
+	min-width: 325px;
 }
 
 .item-title{
-	height: 50px;
+	height: 27px;
 	width: 325px;
+}
 
-	background: yellow;
+.item-title-text{
+	font-family: Avenir Next;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3C3C3C;
 }
 
 .item-location{
-	height: 25px;
+	height: 22px;
 	width: 325px;
-
-	background: blue;
 }
 
-.item-description{
+.item-location-text{
+	font-family: Avenir Next Italic;
+    font-size: 14px;
+    font-weight: 200;
+    color: #505050;
+}
+
+.item-price{
 	height: 25px;
 	width: 325px;
+}
 
-	background: purple;
+.item-price-text{
+	font-family: Avenir Next Italic;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4C4C4C;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0px;
+	height: 75px;
+	width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -149,3 +189,75 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
+input[type=text] {
+   	padding: 12px 20px;
+    margin: 8px 0;
+    height: 65px;
+    width: 100%;
+ 
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+    position: absolute;
+    
+    font-size: 20px;
+    font-family: Avenir Next;
+    color: #4D4D4D;
+}
+
+input[type=text]:focus {
+    border: 3px solid #4D4D4D;
+    border-radius: 4px;
+}
+
+
+
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("./fonts/AvenirNext-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("./fonts/AvenirNext-Medium.ttf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("./fonts/AvenirNext-Bold.ttf");
+  font-weight: bold;
+}
+
+
+
+@font-face {
+  font-family: 'Avenir Next Italic';
+  src: url("./fonts/AvenirNext-UltraLightItalic.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Avenir Next Italic';
+  src: url("./fonts/AvenirNext-Italic.ttf");
+  font-weight: normal;
+  font-style : normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Italic';
+  src: url("./fonts/AvenirNext-MediumItalic.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Avenir Next Italic';
+  src: url("./fonts/AvenirNext-BoldItalic.ttf");
+  font-weight: bold;
+}
+
