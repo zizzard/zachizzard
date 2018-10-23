@@ -53,20 +53,17 @@ body{
     min-width: 300px;
 }
 
-.sign-in{
+.header-frame{
 	position: relative;
     float: right;
-    margin-right: 50px;
-    height: 75px;
-    width: 150px;
-}
+    margin-right: 30px;
 
-.sign-up{
-	position: relative;
-    float: right;
-    margin-right: 50px;
-    height: 75px;
-    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 600px;
 }
 
 .main{
