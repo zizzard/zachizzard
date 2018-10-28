@@ -27,12 +27,20 @@ body{
   position: absolute;
 }
 
+.header-text:hover{
+  cursor: pointer;
+}
+
 .icon{
 	position: relative;
 	float: left;
 	margin-left: 50px;
 	height: 75px;
 	width: 100px;
+}
+
+.icon:hover{
+  cursor: pointer;
 }
 
 .icon-image{
@@ -54,16 +62,14 @@ body{
 }
 
 .header-frame{
-	position: relative;
+  position: relative;
   float: right;
-  margin-right: 30px;
+  margin-right: 50px;
+  width: 30%;
+  min-width: 275px;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  width: 500px;
+  justify-content: space-between;
 }
 
 .main{
@@ -80,6 +86,10 @@ body{
 	padding-bottom: 50px;
 }
 
+.inner-frame{
+  display: flex;
+}
+
 .browser-bar{
 	position: relative;
 	height: 75px;
@@ -93,6 +103,69 @@ body{
   width: 200px;
 }
 
+.saved-items{
+  position: static;
+  height: 70vh;
+  width: 30%;
+  min-width: 325px;
+  float: right;
+  
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.saved-title{
+  font-family: Avenir Next Italic;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4D4D4D;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+
+#saved-table{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.table-item-text { 
+  font-family: 'Avenir Next';
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.table-item-text:hover{
+  cursor: pointer;
+}
+
+.table-price-text {  
+  font-family: 'Avenir Next Italic';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* third column */ 
+td:first-child + td + td { 
+  min-width: 20px;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
 .heart{
   height: 18px;
   width: 18px;
@@ -100,6 +173,10 @@ body{
   color: white;
   padding-top: 15px;
   padding-left: 15px;
+}
+
+.heart:hover{
+  cursor: pointer;
 }
 
 .item-frame{
@@ -125,7 +202,7 @@ body{
   margin-top: 20px;
   min-width: 250px;
   overflow: hidden;
-  flex: 1 1 calc(25% - 40px)
+  flex: 0 1 calc(25% - 40px)
 }
 
 .item-image{
@@ -134,6 +211,10 @@ body{
 	overflow: hidden;
   justify-content: center;
   display: flex;
+}
+
+.item-image:hover{
+  cursor: pointer;
 }
 
 .item-image-pic{
@@ -146,6 +227,10 @@ body{
 .item-title{
 	height: 27px;
 	width: 325px;
+}
+
+.item-title:hover{
+  cursor: pointer;
 }
 
 .item-title-text{
@@ -234,7 +319,7 @@ input[type=text]:focus {
 @font-face {
   font-family: 'Avenir Next';
   src: url("./fonts/AvenirNext-Medium.ttf");
-  font-weight: medium;
+  font-weight: 200;
 }
 
 @font-face {
