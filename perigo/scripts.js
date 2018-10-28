@@ -24,9 +24,18 @@ function unsaveItem(element){
 
 function showSavedItems(){
     var table = document.getElementById("saved-items");
-    if (table.style.display === "none") {
-        table.style.display = "block";
+    if (table.style.display === "block") {
+         $('#saved-items').animate({width: "0%"}, 500);
+         setTimeout(function(){
+        	table.style.display = "none";
+    	},450);
     } else {
-        table.style.display = "none";
+    	table.style.display = "block";
+        $('#saved-items').animate({width: "30%"}, 500);
     }
 };
+
+$(window).scroll(function() {
+	var windowpos = $(window).scrollTop();
+    $('#saved-items').css('top', windowpos + "px");
+});
