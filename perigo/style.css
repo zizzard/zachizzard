@@ -58,7 +58,6 @@ body{
   height: 75px;
   width: 38%;
   max-width: 650px;
-  min-width: 300px;
 }
 
 .header-frame{
@@ -66,7 +65,6 @@ body{
   float: right;
   margin-right: 50px;
   width: 30%;
-  min-width: 275px;
 
   display: flex;
   justify-content: space-between;
@@ -188,7 +186,6 @@ tr:hover {
   padding-right: 40px;
   height: calc(100% - 100px);
   width: calc(100% - 80px);
-  min-width: 750px;
   max-width: 1525px;
   display: flex;
   flex-flow: row wrap;
